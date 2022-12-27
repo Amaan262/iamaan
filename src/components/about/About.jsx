@@ -1,5 +1,5 @@
 import React from 'react'
-import profile2 from '../../assets/image/profile2.png'
+// import profile2 from '../../assets/image/profile2.png'
 const About = () => {
   return (
     <>
@@ -7,7 +7,7 @@ const About = () => {
     <h1>About Me</h1>
     <div className="about_info">
       <div className="image">
-        <img src={profile2} alt="profile" />
+        <img src="" alt="profile" />
       </div>
       <div className="info">
         <p>Amaan Ahmad</p>

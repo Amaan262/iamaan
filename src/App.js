@@ -9,15 +9,15 @@ import Contact from './components/contact/Contact'
 import Projects from './components/projects/Projects'
 const App = () => {
   return (
-    
+
     <>
-    <Header/>
-    <Hero/>
-    {/* <About/> */}
-    <Skills/>
-    <Projects/>
-    <Contact/>
-    <Footer/>
+      <Header />
+      <Hero />
+      {/* <About/> */}
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
 
   )

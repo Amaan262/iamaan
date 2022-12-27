@@ -2,6 +2,8 @@ import React from "react";
 import "./hero.scss";
 import Particles from "../particles/Particles";
 import profile from "../../assets/image/profile.png";
+import { Resume } from "../../assets/docs/docs";
+
 const Hero = () => {
 
 
@@ -20,9 +22,10 @@ const Hero = () => {
             </h2>
             <div className="btn-box ">
               <a
-                href="https://drive.google.com/file/d/1mgZfPdQxZo6pDba6vIfq0qFMHYZn-JCQ/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={Resume}
+                download={"Amaan-resume"}
+                // target="_blank"
+                // rel="noopener noreferrer"
                 className="resume-btn"
               >
                 Download Resume

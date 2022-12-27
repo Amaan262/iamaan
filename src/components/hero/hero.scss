@@ -17,12 +17,14 @@
   .hero__wrap {
     @include flex(center, space-between);
     margin: 4rem;
-    // padding-top: 4%;
+    padding-top: 2%;
+    // align-items: center;
     position: relative;
     z-index: 300;
-
+    
     @include mobile {
       flex-direction: column;
+      padding-top: 6%;
       text-align: center;
       margin: 0;
 
