@@ -3,7 +3,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import './particles.scss'
-import { bg } from '../../assets/image/images';
+// import { bg } from '../../assets/image/images';
 const Particle = () => {
   const particlesInit = useCallback(async (engine) => {
     // console.log(engine);
