@@ -1,5 +1,5 @@
 import React from "react";
-import { chatApp, textutils1, tictactoe, hoobank, movieapp, glassMor, todoJS } from "../../assets/image/images";
+import { chatApp, textutils1, tictactoe, hoobank, movieapp, glassMor, todoJS, calc } from "../../assets/image/images";
 import "./projects.scss";
 
 const proArr = [
@@ -49,10 +49,10 @@ const proArr = [
   },
   {
     name: "D Calculator",
-    imageUrl: tictactoe,
+    imageUrl: calc,
     desc: "Basic Calculator using Reactjs",
-    linkToView: "https://amaan244.github.io/",
-    linkToCode: "https://github.com/Amaan244/Tic-tac-toe"
+    linkToView: "https://amaan262.github.io/D-calculator/",
+    linkToCode: "https://github.com/Amaan262/D-calculator"
   },
   {
     name: "TicTacToe",

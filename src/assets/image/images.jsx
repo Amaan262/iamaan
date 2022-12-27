@@ -9,10 +9,11 @@ import hoobank from "./hoobank.png";
 import movieapp from "./movieapp.png";
 import tictactoe from "./tictactoe.png";
 import todoJS from "./todoJS.png";
+import calc from "./calc.png";
 
 
 export {
 
-     chatApp, contact, profile, logo, textutils, textutils1, tictactoe, hoobank, movieapp, glassMor,todoJS
+     chatApp, contact, profile, logo, textutils, textutils1, tictactoe, hoobank, movieapp, glassMor, todoJS, calc
 
 };
