@@ -10,10 +10,11 @@ import movieapp from "./movieapp.png";
 import tictactoe from "./tictactoe.png";
 import todoJS from "./todoJS.png";
 import calc from "./calc.png";
+import loading from "./winloader.gif";
 
 
 export {
 
-     chatApp, contact, profile, logo, textutils, textutils1, tictactoe, hoobank, movieapp, glassMor, todoJS, calc
+     chatApp, contact, profile, logo, textutils, textutils1, tictactoe, hoobank, movieapp, glassMor, todoJS, calc, loading
 
 };

@@ -1,4 +1,5 @@
 @use "../../scss/" as *;
+
 #contact {
   background-color: #e5ecfb;
   @include flex(center, center);
@@ -6,9 +7,11 @@
   min-height: 50vh;
   padding: 2rem 0;
   text-align: center;
+
   h1 {
     font-size: 2rem;
   }
+
   .contact__container {
     max-width: 1050px;
     // width: 100%;
@@ -17,7 +20,7 @@
     padding: 2rem;
     border-radius: 1.5rem;
     box-shadow: $box-shadow2;
-  
+
     .contact__content {
       @include flex(center, space-between);
       padding: 2rem 2rem;
@@ -38,15 +41,18 @@
         width: 50%;
         // margin-right: 3.5rem;
         position: relative;
-        #boxi{
+
+        #boxi {
           text-align: left;
           position: absolute;
           margin-top: 1rem;
           right: 0;
         }
+
         .form__group {
           @include flex(unset, center);
           flex-direction: column;
+
           .field {
             height: 45px;
             display: flex;
@@ -63,6 +69,7 @@
               pointer-events: none;
               transform: translateY(-50%);
             }
+
             input,
             textarea {
               width: 100%;
@@ -78,10 +85,12 @@
                 padding-left: 47px;
                 border: 2px solid rgb(115, 3, 167);
               }
-              &:focus ~ i {
+
+              &:focus~i {
                 color: rgb(115, 3, 167);
               }
             }
+
             textarea {
               min-height: 130px;
               max-height: 230px;
@@ -90,10 +99,13 @@
               padding: 12px 20px 0 48px;
             }
           }
+
           .button-area {
             display: flex;
             flex-direction: row-reverse;
             margin-top: 100px;
+            height: 50px;
+
             button {
               color: #fff;
               border: none;
@@ -105,11 +117,19 @@
               background: #2506ad;
               box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
               transition: 0.3s ease;
+
               &:hover {
                 background: #421cecf5;
               }
             }
           }
+        }
+
+        #loader {
+          visibility: hidden;
+          width: 30px;
+          margin: 10px 20px;
+          filter: opacity(40%);
         }
       }
     }
@@ -124,8 +144,10 @@
     @include mobile {
       width: 80%;
       @include flex(center, center);
+
       .contact__content {
         width: 100%;
+
         #contact__form {
           width: 100%;
         }

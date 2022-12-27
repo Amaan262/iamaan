@@ -1,31 +1,34 @@
 import React from "react";
 import "./contact.scss";
-import contact_img from "../../assets/image/contact.png";
+// import contact_img from "../../assets/image/contact.png";
+import { contact, loading } from "../../assets/image/images";
+
 const Contact = () => {
 
   const submitForm = async () => {
     const scriptURL = "https://script.google.com/macros/s/AKfycbzjsJyhEhuUvDGvXxJFouGfZxyEVBRLItLKiKCxch-2SvxSzynL-6WqciYxqR9U4GMtyA/exec"
 
     const form = document.forms['google-sheet']
-
+    const loader = document.getElementById("loader")
     await form.addEventListener('submit', e => {
       e.preventDefault()
+      loader.style.visibility = "visible"
       const boxi = document.getElementById('boxi');
 
 
-
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => boxi.innerHTML = "Response Recieved ✅")
+        .then(response => {
+          form.reset();
+          boxi.innerHTML = "Thank you! Response Recieved ✅";
+          loader.style.visibility = 'hidden'
+
+
+          setTimeout(() => {
+            boxi.innerHTML = ""
+
+          }, 3000);
+        })
         .catch(error => console.error('Error!', error.message))
-
-      setTimeout(() => {
-        boxi.innerHTML = ""
-
-      }, 2000);
-
-
-
-
     })
 
   }
@@ -40,7 +43,7 @@ const Contact = () => {
         <div className="contact__container">
           <div className="contact__content">
             <div className="contact__image__box">
-              <img src={contact_img} alt="contact" />
+              <img src={contact} alt="contact" />
             </div>
             <form method="POST" name="google-sheet" id="contact__form">
               <div className="form__group">
@@ -61,9 +64,11 @@ const Contact = () => {
                   <i className="fas fa-comment-dots"></i>
                 </div>
                 <div className="button-area">
+
                   <button type="submit" name="submit" onClick={submitForm}>
                     Submit <i className="fa fa-paper-plane"></i>
                   </button>
+                  <img id="loader" src={loading} alt="loading" />
                 </div>
               </div>
               <div id="boxi"></div>
