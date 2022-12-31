@@ -15,17 +15,17 @@ const proArr = [
     name: "Magical Chat App",
     imageUrl: chatApp,
     desc: "Chat App Built using Realtime Chat with the help of Socket.io",
-    linkToView: "",
+    linkToView: "magicalchat.herokuapp.com/",
     linkToCode: "https://github.com/Amaan262/Magical-Chat-v2.0"
   },
-
   {
-    name: "Textutils",
-    imageUrl: textutils1,
-    desc: "Simple text tranformation Web App to manipulate text - to remove extraspaces, to uppercase, to lowercase",
-    linkToView: "https://amaan262.github.io/textutils/",
-    linkToCode: "https://github.com/Amaan262/textutils"
+    name: "TodoJS",
+    imageUrl: todoJS,
+    desc: "Notes keeping website, Notes are stored in local Storage",
+    linkToView: "https://amaan262.github.io/TodoList/",
+    linkToCode: "https://github.com/Amaan262/TodoList"
   },
+
   {
     name: "Glass Morphism",
     imageUrl: glassMor,
@@ -40,19 +40,20 @@ const proArr = [
     linkToView: "https://amaan262.github.io/HooBank-website/",
     linkToCode: "https://github.com/Amaan262/HooBank-website"
   },
-  {
-    name: "TodoJS",
-    imageUrl: todoJS,
-    desc: "Notes keeping website, Notes are stored in local Storage",
-    linkToView: "https://amaan262.github.io/TodoList/",
-    linkToCode: "https://github.com/Amaan262/TodoList"
-  },
+
   {
     name: "D Calculator",
     imageUrl: calc,
     desc: "Basic Calculator using Reactjs",
     linkToView: "https://amaan262.github.io/D-calculator/",
     linkToCode: "https://github.com/Amaan262/D-calculator"
+  },
+  {
+    name: "Textutils",
+    imageUrl: textutils1,
+    desc: "Simple text tranformation Web App to manipulate text - to remove extraspaces, to uppercase, to lowercase",
+    linkToView: "https://amaan262.github.io/textutils/",
+    linkToCode: "https://github.com/Amaan262/textutils"
   },
   {
     name: "TicTacToe",
