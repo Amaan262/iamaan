@@ -15,7 +15,7 @@ const proArr = [
     name: "Magical Chat App",
     imageUrl: chatApp,
     desc: "Chat App Built using Realtime Chat with the help of Socket.io",
-    linkToView: "magicalchat.herokuapp.com/",
+    linkToView: "https://magical-chat-app.onrender.com/",
     linkToCode: "https://github.com/Amaan262/Magical-Chat-v2.0"
   },
   {
