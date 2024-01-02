@@ -75,11 +75,13 @@ const Header = () => {
 
           {/* </ul> */}
         </div>
+
         <div
           className={`bx bx-${menu}`}
           onClick={handleMenuButton}
           id="menu-icon"
         ></div>
+        
         <ul className="header__nav" ref={header__nav}>
           {headerNav.map((item, i) => (
             <li
